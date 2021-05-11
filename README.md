@@ -74,11 +74,18 @@ Details regarding optional parameters settings of the code are shown below:
 
 The code also provides evaluation part. Mainly two files are necessary for the evaluation, the result file from estimation and the groundtruth file.
 
-The result file need to be in a certain format:
+Please notice that the result file need to be in a certain format:
 
     index, reference time, end time, [loss], wx, wy, wz ([*] is optional)
 
-Please follow the instructions shown in the command line window or the title of dialog box.
+### How to run it?
+
+Simply run the code using command:
+
+    python src/eval.py
+
+Some dialog boxes for choosing files would come out. Please follow the instructions shown in the command line window or the title of dialog box.
+
 
 
 
