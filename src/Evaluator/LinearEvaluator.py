@@ -21,7 +21,7 @@ class LinearEvaluator(Evaluator):
             imu_data = np.loadtxt(gt_filename)
             for cam_info in imu_data:
                 temp = np.array(
-                    [cam_info[0] - 0.0024, cam_info[2], cam_info[3], -cam_info[1]])
+                    [cam_info[0] - 0.0024, -cam_info[1], cam_info[3], -cam_info[2]])
                 cam_vel.append(temp)
         else:
             print("Not supported!")
